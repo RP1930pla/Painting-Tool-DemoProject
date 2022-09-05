@@ -296,7 +296,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566781415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f7e3352043f03e46a3585da93bc4479, type: 3}
   m_Name: 
@@ -305,23 +305,24 @@ MonoBehaviour:
   Grass: {fileID: 566781420}
   Brush: {fileID: 566781419}
   CursorMesh: {fileID: 1314230637}
-  CursorMat: {fileID: 0}
-  CursorMat2: {fileID: 0}
+  CursorMat: {fileID: 2100000, guid: d4f28a43e27013845bc88f73f44c280d, type: 2}
+  CursorMat2: {fileID: 2100000, guid: b2aa51295b5d6f64e9cb250946888062, type: 2}
   ColorYes:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4294949888
   ColorNo:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4278190335
   SceneCamera: {fileID: 961739752}
-  GrassMesh: {fileID: 0}
-  GrassMaterial: {fileID: 0}
-  BrushTexture: {fileID: 0}
+  GrassMesh: {fileID: -2432090755550338912, guid: 5f44d1026ccbf8c418ef8c9163721d64,
+    type: 3}
+  GrassMaterial: {fileID: 2100000, guid: 0a9cb16eaec28e940b8fcf87cc10a250, type: 2}
+  BrushTexture: {fileID: 2800000, guid: d7c9d1430f9406b40b72bd18f4a56b39, type: 3}
   MaxTextureBrushSize: 5
   MinTextureBrushSize: 15
-  BrushSize: 0
-  Instances: 0
-  Normal_Mask: 0
+  BrushSize: 1
+  Instances: 6
+  Normal_Mask: 0.172
   Settings: {fileID: 0}
 --- !u!114 &566781419
 MonoBehaviour:
@@ -330,17 +331,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566781415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba9ae5d2a2b1e944eb56a4c570844467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TextureResolution: 512
   whiteMap: {fileID: 0}
-  Cam: {fileID: 0}
+  Cam: {fileID: 961739752}
   brushSize: 0
-  brushTexture: {fileID: 0}
-  NormalLimit: 1
+  brushTexture: {fileID: 2800000, guid: d7c9d1430f9406b40b72bd18f4a56b39, type: 3}
+  NormalLimit: 0.172
 --- !u!114 &566781420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,18 +349,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566781415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c863234eae4f71e429e40c9fca639e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxInstances: 0
-  GrassMesh: {fileID: 0}
-  GrassMat: {fileID: 0}
-  Cam: {fileID: 0}
+  MaxInstances: 100
+  GrassMesh: {fileID: -2432090755550338912, guid: 5f44d1026ccbf8c418ef8c9163721d64,
+    type: 3}
+  GrassMat: {fileID: 2100000, guid: 136c20a0735d8cd4b9ab84e82fbcfdeb, type: 2}
+  Cam: {fileID: 961739752}
   normallimit: 1
-  Density: 0
-  BrushSize: 0
+  Density: 6
+  BrushSize: 0.34
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,27 +491,14 @@ GameObject:
   - component: {fileID: 1030605972}
   - component: {fileID: 1030605971}
   - component: {fileID: 1030605970}
-  - component: {fileID: 1030605969}
-  m_Layer: 0
+  - component: {fileID: 1030605973}
+  m_Layer: 6
   m_Name: Test Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1030605969
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030605968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1030605970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -575,6 +564,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1030605973
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030605968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1314230636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
@@ -769,6 +772,16 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 2.1776292
       objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2aa51295b5d6f64e9cb250946888062, type: 2}
+    - target: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4f28a43e27013845bc88f73f44c280d, type: 2}
     - target: {fileID: 919132149155446097, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
         type: 3}
       propertyPath: m_Name
