@@ -23,6 +23,8 @@ public class RuntimeSettings : MonoBehaviour
     public Texture2D BrushTexture;
     public float MaxTextureBrushSize;
     public float MinTextureBrushSize;
+    public float MaxGrass = 2f;
+    public float MinGrass = 0.1f;
     [Header("Runtime Settings")] 
     [Range(0, 1)] public float BrushSize;
     [Range(1, 6)] public int Instances;
@@ -56,7 +58,7 @@ public class RuntimeSettings : MonoBehaviour
         }
 
         
-        Grass.BrushSize = Mathf.Lerp(0.1f,2f,BrushSize);
+        Grass.BrushSize = Mathf.Lerp(MinGrass,MaxGrass,BrushSize);
         Brush.brushSize = Mathf.Lerp(MinTextureBrushSize, MaxTextureBrushSize, BrushSize);
         CursorMesh.SetBlendShapeWeight(0,BrushSize*100f);
         
