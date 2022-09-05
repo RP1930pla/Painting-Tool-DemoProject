@@ -248,6 +248,9 @@ GameObject:
   m_Component:
   - component: {fileID: 566781417}
   - component: {fileID: 566781416}
+  - component: {fileID: 566781420}
+  - component: {fileID: 566781419}
+  - component: {fileID: 566781418}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -286,6 +289,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566781418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566781415}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7e3352043f03e46a3585da93bc4479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cursor: {fileID: 566781416}
+  Grass: {fileID: 566781420}
+  Brush: {fileID: 566781419}
+  CursorMesh: {fileID: 1314230637}
+  CursorMat: {fileID: 0}
+  CursorMat2: {fileID: 0}
+  ColorYes:
+    serializedVersion: 2
+    rgba: 0
+  ColorNo:
+    serializedVersion: 2
+    rgba: 0
+  SceneCamera: {fileID: 961739752}
+  GrassMesh: {fileID: 0}
+  GrassMaterial: {fileID: 0}
+  BrushTexture: {fileID: 0}
+  MaxTextureBrushSize: 5
+  MinTextureBrushSize: 15
+  BrushSize: 0
+  Instances: 0
+  Normal_Mask: 0
+  Settings: {fileID: 0}
+--- !u!114 &566781419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566781415}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9ae5d2a2b1e944eb56a4c570844467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextureResolution: 512
+  whiteMap: {fileID: 0}
+  Cam: {fileID: 0}
+  brushSize: 0
+  brushTexture: {fileID: 0}
+  NormalLimit: 1
+--- !u!114 &566781420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566781415}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c863234eae4f71e429e40c9fca639e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxInstances: 0
+  GrassMesh: {fileID: 0}
+  GrassMat: {fileID: 0}
+  Cam: {fileID: 0}
+  normallimit: 1
+  Density: 0
+  BrushSize: 0
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +581,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1990408759}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &1314230637 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1990408759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1795081558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef81c819fca8f5b47852a82db869134c,
@@ -575,6 +655,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ef81c819fca8f5b47852a82db869134c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ef81c819fca8f5b47852a82db869134c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2aa51295b5d6f64e9cb250946888062, type: 2}
     - target: {fileID: 919132149155446097, guid: ef81c819fca8f5b47852a82db869134c,
         type: 3}
       propertyPath: m_Name
@@ -647,6 +737,11 @@ PrefabInstance:
     - target: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
         type: 3}
       propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 69ae4e085f0f37947a6941fac7a8b1f1,
