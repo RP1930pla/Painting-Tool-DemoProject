@@ -75,10 +75,10 @@ MonoBehaviour:
   active: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.86
+    m_Value: 1.02
   intensity:
     m_OverrideState: 1
-    m_Value: 2.19
+    m_Value: 1.98
   scatter:
     m_OverrideState: 1
     m_Value: 0.097
@@ -97,6 +97,7 @@ MonoBehaviour:
   dirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
+    dimension: 1
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
