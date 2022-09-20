@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-290476407441189670
+--- !u!114 &-3632238186005791875
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pilar_mat
-  m_Shader: {fileID: -6465566751694194690, guid: 219e71c1e0517434692523c4851e9d4a,
+  m_Name: Pilar_Big_mat
+  m_Shader: {fileID: -6465566751694194690, guid: 08cb583c8b5427e42a1a62c3ff0474e6,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -34,24 +34,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_2466f1bf0fee461d8642c031d31c6ce9:
-        m_Texture: {fileID: 2800000, guid: 337ac419da1a56f48ac518fd101e3723, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - Texture2D_88247ba22c584cc8844fb86b352bd503:
-        m_Texture: {fileID: 2800000, guid: 1cbd2b9325b980141b6c129f65acface, type: 3}
+        m_Texture: {fileID: 2800000, guid: 42af4c8709cc83b48ad8b52609160795, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ad529bf664354e07a68965e7444d6a31:
-        m_Texture: {fileID: 2800000, guid: b93193f46b0d8c9448a512daf2705fa5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8e1fe870cf1f3804681e8dcc2c2cb3d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ba70bf06168c4e558d9ff1259fc28a9d:
-        m_Texture: {fileID: 2800000, guid: cc790e45c7bb6f94d9741c2ca65cb67e, type: 3}
+        m_Texture: {fileID: 2800000, guid: f5fe414f27f4f404f85b62b459405c7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_d27331386eb141a38043ca3805e2c725:
-        m_Texture: {fileID: 2800000, guid: ce21fab07aa42ef429e852fd1e4ceba1, type: 3}
+        m_Texture: {fileID: 2800000, guid: b92be345c90b5264a9d6591b395e89bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -90,10 +86,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _PaintMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -116,11 +108,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_60f840272346499eaba6cf0e20450115: 0.489
-    - Vector1_84f678d4ff3647e78e9f71224e25b9a3: 0.68
+    - Vector1_60f840272346499eaba6cf0e20450115: 0.317
+    - Vector1_84f678d4ff3647e78e9f71224e25b9a3: 0.53
     - Vector1_92a9ccfd38134eeabbfc9d5e2c971f87: 0
-    - Vector1_c46d4ef69c64499587d90cc8a8108d26: 1
-    - Vector1_f385bf0bf2e1479aa706362134da2b71: 1.53
+    - Vector1_c46d4ef69c64499587d90cc8a8108d26: 0
+    - Vector1_f385bf0bf2e1479aa706362134da2b71: 0.41
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -148,14 +140,12 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _normalstrenght: 0.593
+    - _normalstrenght: 0.285
     m_Colors:
     - Color_f2f84ae1b1f242ca961c62dd6762f3dc: {r: 1, g: 1, b: 1, a: 0}
-    - Color_f58b7e0a45774f8c9889ec86410789ca: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _Tiling_2: {r: 1, g: 1, b: 0, a: 0}
+    - _tint: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
