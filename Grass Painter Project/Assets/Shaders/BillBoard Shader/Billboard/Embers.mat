@@ -40,6 +40,8 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_eec318939db34248a8c6062199f17818: 30
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_56e80e67e17c43ee9c5fe082691e471a: {r: 72.65929, g: 15.216605, b: 0, a: 1}
     - Vector2_6f3000a7e6524596882aa13f36419624: {r: 8, g: 8, b: 0, a: 0}
