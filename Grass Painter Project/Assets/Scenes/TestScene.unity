@@ -7035,6 +7035,16 @@ PrefabInstance:
       propertyPath: Cam
       value: 
       objectReference: {fileID: 961739752}
+    - target: {fileID: 5362354551847075203, guid: 262e8385e12b9584c881bbb305b687d7,
+        type: 3}
+      propertyPath: Density
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362354551847075203, guid: 262e8385e12b9584c881bbb305b687d7,
+        type: 3}
+      propertyPath: MaxInstances
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5362354551847075204, guid: 262e8385e12b9584c881bbb305b687d7,
         type: 3}
       propertyPath: Cam
@@ -7045,6 +7055,11 @@ PrefabInstance:
       propertyPath: Settings
       value: 
       objectReference: {fileID: 606134610}
+    - target: {fileID: 5362354551847075205, guid: 262e8385e12b9584c881bbb305b687d7,
+        type: 3}
+      propertyPath: Instances
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5362354551847075205, guid: 262e8385e12b9584c881bbb305b687d7,
         type: 3}
       propertyPath: SceneCamera
